@@ -6,7 +6,7 @@
 
     <groupId>com.cerberussolutions.enjin.forum.exporter</groupId>
     <artifactId>EnjinForumExporter</artifactId>
-    <version>1.0</version>
+    <version>1.1-SNAPSHOT</version>
 
     <properties>
         <jdk.version>11</jdk.version>
