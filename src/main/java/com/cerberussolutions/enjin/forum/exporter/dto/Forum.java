@@ -13,6 +13,10 @@ public class Forum {
 
     private String url;
 
+    @JacksonXmlElementWrapper(localName = "subForums")
+    @JacksonXmlProperty(localName = "forum")
+    private List<Forum> subForums;
+
     @JacksonXmlElementWrapper(localName = "threads")
     @JacksonXmlProperty(localName = "thread")
     private List<Thread> threads;
@@ -39,6 +43,14 @@ public class Forum {
 
     public void setUrl(String url) {
         this.url = url;
+    }
+
+    public List<Forum> getSubForums() {
+        return subForums;
+    }
+
+    public void setSubForums(List<Forum> subForums) {
+        this.subForums = subForums;
     }
 
     public List<Thread> getThreads() {
