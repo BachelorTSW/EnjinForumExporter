@@ -53,6 +53,7 @@ deploy:jdk11:
   artifacts:
     paths:
       - target/EnjinForumExporter*jar-with-dependencies.jar
+    name: EnjinForumExporter
   only:
     variables:
       - $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
